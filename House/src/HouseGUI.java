@@ -66,13 +66,13 @@ public class HouseGUI extends JFrame {
 		House hus3 = new House(100, 2001);
 		
 		
-		System.out.println("Detta huset är byggt " + hus1.yearBuilt + " och är " +hus1.size +" kvm stort." );
-		System.out.println("Detta huset är byggt " + hus2.yearBuilt + " och är " +hus2.size +" kvm stort.");
-		System.out.println("Detta huset är byggt " + hus3.yearBuilt + " och är " +hus3.size +" kvm stort.");
+		System.out.println("Detta huset Ã¤r byggt " + hus1.yearBuilt + " och Ã¤r " +hus1.size +" kvm stort." );
+		System.out.println("Detta huset Ã¤r byggt " + hus2.yearBuilt + " och Ã¤r " +hus2.size +" kvm stort.");
+		System.out.println("Detta huset Ã¤r byggt " + hus3.yearBuilt + " och Ã¤r " +hus3.size +" kvm stort.");
 		textArea.append("Uppgift 1.2."+ "\n");
-		textArea.append("Detta huset är byggt " + hus1.yearBuilt + " och är " +hus1.size +" kvm stort."+ "\n");
-		textArea.append("Detta huset är byggt " + hus2.yearBuilt + " och är " +hus2.size +" kvm stort."+ "\n");
-		textArea.append("Detta huset är byggt " + hus3.yearBuilt + " och är " +hus3.size +" kvm stort."+ "\n");
+		textArea.append("Detta huset Ã¤r byggt " + hus1.yearBuilt + " och Ã¤r " +hus1.size +" kvm stort."+ "\n");
+		textArea.append("Detta huset Ã¤r byggt " + hus2.yearBuilt + " och Ã¤r " +hus2.size +" kvm stort."+ "\n");
+		textArea.append("Detta huset Ã¤r byggt " + hus3.yearBuilt + " och Ã¤r " +hus3.size +" kvm stort."+ "\n");
 		
 		// Deklarerar en array av hus
 		textArea.append("Uppgift 1.3."+ "\n");
@@ -92,7 +92,7 @@ public class HouseGUI extends JFrame {
 	    for (int i = 0; i < 10; i++) {
 			
 	    	    
-				textArea.append("Detta huset är byggt " + houseArray[i].yearBuilt + " och är " +houseArray[i].size +" kvm stort."+ "\n");
+				textArea.append("Detta huset Ã¤r byggt " + houseArray[i].yearBuilt + " och Ã¤r " +houseArray[i].size +" kvm stort."+ "\n");
 
 	    }
 	    //ArrayList
@@ -106,22 +106,9 @@ public class HouseGUI extends JFrame {
 			
 		}
 		for( int i = 0; i < 100; i++){
-			textArea.append("Detta huset är byggt " + house.get(i).yearBuilt + " och är " + house.get(i).size +" kvm stort."+ "\n");
+			textArea.append("Detta huset Ã¤r byggt " + house.get(i).yearBuilt + " och Ã¤r " + house.get(i).size +" kvm stort."+ "\n");
 		}
 		
-		
-		// Olika försök.
-		
-	/*	//get size and display
-		int House = house.size();
-		System.out.println(house);
-		
-		//Loopa igenom house
-		for(int i1 = 100; i1 < house.size(); i1++){
-			int value = house.get(i1);
-			textArea.append("houses: "+"\n" + value);
-		}*/
-	    
-		}
+	}
 	
 }
