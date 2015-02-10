@@ -21,6 +21,7 @@ package Uppgift_4;
 			String info = name + "äger inte en hund";
 					return info;
 		}
+		return name;
 	
 	}
 }	
