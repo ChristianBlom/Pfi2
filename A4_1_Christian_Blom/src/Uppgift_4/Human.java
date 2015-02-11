@@ -19,10 +19,10 @@ public class Human {
 	public String getInfo() {
 		
 		if (dog == null ){
-			Info = name +(" har ingen hund ");
+			String Info = name +(" har ingen hund ");
 			return Info;
 		}else {
-			String Info = name +(" Äger en hund some heter ")+ name;
+			String Info = name +(" Ã„ger en hund some heter ")+ name;
 			return Info;
 		}
 
