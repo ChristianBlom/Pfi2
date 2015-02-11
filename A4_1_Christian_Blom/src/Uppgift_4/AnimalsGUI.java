@@ -47,6 +47,8 @@ public class AnimalsGUI extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	
+	// borde skapas d√§r uppe vid instansvariablerna och borde inte vara static
 	static Human human;
 	private JLabel lblHumansAndDogs;
 	public AnimalsGUI() {
@@ -98,7 +100,7 @@ public class AnimalsGUI extends JFrame {
 		btnHuman.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (textPane_human.getText().length() < 3){
-					textPane_error.setText(textPane_human.getText()+ "ƒr ett fˆr kort namn");
+					textPane_error.setText(textPane_human.getText()+ "ÔøΩr ett fÔøΩr kort namn");
 				}else{
 					human = new Human(textPane_human.getText());
 					textPane_info.setText(human.getName());
@@ -112,8 +114,10 @@ public class AnimalsGUI extends JFrame {
 		btnDog = new JButton("Buy dog");
 		btnDog.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				// Inkorrekt indentering, prova markera allt, source (menyn) -> correct indentation
 				if (human == null){
-					textPane_error.setText("Finns ingen m‰nniska h‰r");
+					textPane_error.setText("Finns ingen mÔøΩnniska hÔøΩr");
 				}
 				else{
 						Dog doggy = new Dog(textPane_dog.getText());
@@ -128,6 +132,7 @@ public class AnimalsGUI extends JFrame {
 		btnPrintInfo = new JButton("Print Info");
 		btnPrintInfo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				// borde g√∂ra nullcheck p√• human h√§r ocks√•
 				textPane_info.setText(human.getInfo());
 			}
 		});

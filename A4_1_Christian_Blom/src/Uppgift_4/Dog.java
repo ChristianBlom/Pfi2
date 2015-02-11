@@ -7,6 +7,7 @@ public class Dog {
 		this.name = name;
 		
 	}
+	
 	private void memberName(){
 		this.memberName();
 		
