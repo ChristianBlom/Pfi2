@@ -1,8 +1,10 @@
 package Uppgift_4;
 
-	public class Human {
+public class Human {
 	private Dog dog;
 	private String name;
+	private String Info = "";
+	
 	
 	public Human (String name){
 		this.name = name;
@@ -14,14 +16,18 @@ package Uppgift_4;
 		this.dog = dog;
 	 
 	}
-	public String getInfo(){
-		if(dog == null){
-			String info = name + " äger en hund some heter" + dog.getName();
-		}else{
-			String info = name + "äger inte en hund";
-					return info;
+	public String getInfo() {
+		
+		if (dog == null ){
+			Info = name +(" har ingen hund ");
+			return Info;
+		}else {
+			String Info = name +(" Äger en hund some heter ")+ name;
+			return Info;
 		}
-		return name;
+
 	
 	}
+
+
 }	
