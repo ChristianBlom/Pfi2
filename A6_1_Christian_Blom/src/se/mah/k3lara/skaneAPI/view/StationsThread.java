@@ -15,7 +15,7 @@ public class StationsThread extends Thread {
 		gui.textArea.setText("Searching..");
 		gui.guiSearch.addAll(Parser.getStationsFromURL(gui.textField.getText()));
 		gui.textArea.setText(null);
-		gui.textArea.append("Lista på hållplater och stationer. \n");
+		gui.textArea.append("List of stations that match your entry. \n");
 		for(int i = 0; i < gui.guiSearch.size(); i++){ 
 			gui.textArea.append(gui.guiSearch.get(i).getStationName()+" StationNumber: "+gui.guiSearch.get(i).getStationNbr()+" \n");
 		}
