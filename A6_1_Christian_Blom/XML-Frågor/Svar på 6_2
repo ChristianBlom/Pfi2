@@ -1,0 +1,28 @@
+1.) Det är mellan Malmö C - Lund C
+
+2.) Du lägger till &noOf=5 i slutet av länken. Dvs &noOF=(Antalet man vill ha)
+	Exempel: http://www.labs.skanetrafiken.se/v2.2/resultspage.asp?cmdaction=next&selPointFr=0|80000|0&selPointTo=0|81216|0 &noOf=5
+	
+3.) <Journeys> håller koll på alla resealternativ. Sen beskriver taggen 
+<Journey> resultatet men också andra detaljer som olika priser, 
+<RouteLinks> innehåller alla etapper i en Journey, därav <RouteLink> 
+beskriver all information om en etapp liksom <Journey> för <Journeys> 
+som t.ex. Priszoner och resa till och från. Taggarna ser ut liksom HTML 
+där varje sluttagg avslutas med ett </>.
+ 
+
+Hierarkiskt:
+
+<Journeys>
+<Journey>
+<RouteLinks>
+<RouteLink>
+</RouteLink>
+</RouteLinks>
+</Journey>
+</Journeys>
+
+4.) <noOfChanges> som finns i <Journey>
+
+5.) <p><p/>
+
