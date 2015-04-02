@@ -31,3 +31,5 @@ public class Human {
 
 			return Info;
 		}
+	}
+}
