@@ -67,7 +67,7 @@ public class TrafficGUI extends JFrame {
 		jT.start();
 		setTitle("Ubåtshallen");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 811, 333);
+		setBounds(100, 100, 807, 329);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -159,7 +159,7 @@ public class TrafficGUI extends JFrame {
 		JLabel lblUbtshallen = new JLabel("Ub\u00E5tshallen");
 		lblUbtshallen.setFont(new Font("Dialog", Font.BOLD, 35));
 		lblUbtshallen.setForeground(Color.WHITE);
-		lblUbtshallen.setBounds(250, -5, 220, 49);
+		lblUbtshallen.setBounds(261, 0, 220, 49);
 		panel.add(lblUbtshallen);
 		
 	
