@@ -22,6 +22,9 @@ public class DigitalClockGUI extends JFrame {
 	private JPanel contentPane;
 	private JTextField clockH;
 	private JTextField clockMin;
+	public boolean alarmIsOn=false;
+	public boolean alarmIsSet=false;
+	
 	final JLabel labelMessage = new JLabel("");
 	ClockLogic clockLogic;
 	JLabel labelTime = new JLabel("00:00:00");
@@ -135,7 +138,9 @@ public class DigitalClockGUI extends JFrame {
 				clockH.setText("00");
 				clockMin.setText("00");
 				contentPane.setBackground(Color.LIGHT_GRAY);
-				labelAlarmAt.setText("00:00");
+				labelAlarmAt.setText("00:01");
+				clockLogic.clearAlarm();
+			
 				
 			}
 		});
@@ -161,6 +166,7 @@ public class DigitalClockGUI extends JFrame {
 		if (true) {
 			labelAlarmNotice.setText("ALARM!");
 			contentPane.setBackground(Color.MAGENTA);
+		
 		}
 	}
 }

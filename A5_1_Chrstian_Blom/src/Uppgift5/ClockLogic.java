@@ -19,6 +19,11 @@ public class ClockLogic implements ClockInterface {
 		}
 	}
 	public void clearAlarm() {
+		  clockGUI.labelAlarmAt.setText("");
+		  clockGUI.labelAlarmNotice.setText("");
+		  clockGUI.labelMessage.setText("");
+		  this.alarmHour = 100;
+		  this.alarmMinute = 100;
 	}
 	public void update(int hours, int minutes, int seconds) {
 		String hourZero = "";
