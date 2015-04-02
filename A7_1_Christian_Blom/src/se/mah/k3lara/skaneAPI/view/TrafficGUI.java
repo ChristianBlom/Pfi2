@@ -67,7 +67,7 @@ public class TrafficGUI extends JFrame {
 		jT.start();
 		setTitle("Ubåtshallen");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 807, 329);
+		setBounds(100, 100, 800, 303);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
